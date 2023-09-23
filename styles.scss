@@ -1,0 +1,81 @@
+.dialog-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &__header {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    max-height: 4rem;
+  }
+
+  &__header-title-container {
+    max-height: 4rem;
+    overflow: hidden;
+  }
+
+  &__header-title {
+    max-height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+  }
+  &__header-subtitle {
+    max-height: 3rem;
+    overflow: hidden;
+  }
+
+  &__header-button {
+    max-height: 4rem;
+  }
+
+  &__content {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__content-block {
+    &_left {
+      width: 30%;
+      border-right: 1px solid #ccc;
+    }
+
+    &_right {
+      width: 70%;
+      overflow-y: scroll;
+    }
+  }
+
+  &__footer {
+    background-color: #ddd;
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}

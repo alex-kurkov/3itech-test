@@ -1,0 +1,73 @@
+.dialog-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.dialog__header {
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  max-height: 4rem;
+}
+.dialog__header-title-container {
+  max-height: 4rem;
+  overflow: hidden;
+}
+.dialog__header-title {
+  max-height: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+.dialog__header-subtitle {
+  max-height: 3rem;
+  overflow: hidden;
+}
+.dialog__header-button {
+  max-height: 4rem;
+}
+.dialog__content {
+  display: flex;
+  overflow: hidden;
+}
+.dialog__content-block_left {
+  width: 30%;
+  border-right: 1px solid #ccc;
+}
+.dialog__content-block_right {
+  width: 70%;
+  overflow-y: scroll;
+}
+.dialog__footer {
+  background-color: #ddd;
+  width: 100%;
+  text-align: center;
+  word-break: break-word;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
